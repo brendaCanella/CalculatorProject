@@ -1,0 +1,103 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+} */
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.general-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.calculator {
+  width: 386px;
+  height: 622px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.display-calculator {
+  width: 340px;
+  margin: 8px;
+  text-align: end;
+  padding-top: 60px;
+  padding-right: 10px;
+  color: #fafafa;
+  font-size: 67px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator-buttons {
+  display: flex;
+  justify-content: center;
+  width: 334px;
+  padding: 16px 16px 0px 16px;
+}
+
+.generic-button,
+.orange-button,
+.gray-button,
+.wide-button {
+  cursor: pointer;
+  background: #9fa1a0;
+  width: 75px;
+  height: 66px;
+  margin-right: 16px;
+  border-radius: 80px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange-button {
+  background: #ff9f0a;
+  color: white;
+}
+
+
+.gray-button {
+  background-color: #333333;
+  color: white;
+}
+
+.gray-button {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.wide-button {
+  background-color: rgb(54, 54, 54);
+  width: 140px;
+  color: white;
+}
+
+
+.aligm-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+.orange-button:active {
+  background-color: white; /* Cor de fundo ao clicar */
+  color: #ff9f0a;
+}
