@@ -14,65 +14,51 @@
   <div class="general-container">
 
     <div class="calculator">
-      <div class="display-calculator">
-        0123699
-      </div>
 
-
+      <input id="display-calculator" type="text" value="" readonly placeholder="0" disabled>
 
       <div class="aligm-buttons">
 
 
         <div class="calculator-buttons">
-          <div class="generic-button">C</div>
-          <div class="generic-button">+/-</div>
-          <div class="generic-button">%</div>
-          <div class="orange-button">
-            <p>÷</p>
-          </div>
+          <button class="generic-button" onclick="clean()">C</button>
+          <button class="generic-button" onclick="operator('+/-')">+/-</button>
+          <button class="generic-button" onclick="operator('%')">%</button>
+          <button class="orange-button" onclick="operator('/')">÷</button>
 
         </div>
 
 
         <div class="calculator-buttons">
-          <div class="gray-button">7</div>
-          <div class="gray-button">8</div>
-          <div class="gray-button">9</div>
-          <div class="orange-button">
-            <p>x</p>
-          </div>
+          <button class="gray-button" onclick="insert('7')">7</button>
+          <button class="gray-button" onclick="insert('8')">8</button>
+          <button class="gray-button" onclick="insert('9')">9</button>
+          <button class="orange-button" onclick="operator('*')">x</button>
         </div>
 
         <div class="calculator-buttons">
-          <div class="gray-button">4</div>
-          <div class="gray-button">5</div>
-          <div class="gray-button">6</div>
-          <div class="orange-button">
-            <p>-</p>
-          </div>
+          <button class="gray-button" onclick="insert('4')">4</button>
+          <button class="gray-button" onclick="insert('5')">5</button>
+          <button class="gray-button" onclick="insert('6')">6</button>
+          <button class="orange-button" onclick="operator('-')">-</button>
         </div>
 
         <div class="calculator-buttons">
-          <div class="gray-button">1</div>
-          <div class="gray-button">2</div>
-          <div class="gray-button">3</div>
-          <div class="orange-button">
-            <p>+</p>
-          </div>
+          <button class="gray-button" onclick="insert('1')">1</button>
+          <button class="gray-button" onclick="insert('2')">2</button>
+          <button class="gray-button" onclick="insert('3')">3</button>
+          <button class="orange-button" onclick="operator('+')">+</button>
         </div>
 
         <div class="calculator-buttons">
-          <div class="wide-button">0</div>
-          <div class="gray-button">,</div>
-          <div class="orange-button">
-            <p>=</p>
-          </div>
+          <button class="wide-button" onclick="insert('0')">0</button>
+          <button class="gray-button" onclick="operator(',')">,</button>
+          <button class="orange-button" onclick="calcular()">=</button>
+
+
         </div>
-
-
       </div>
     </div>
-  </div>
 </body>
 
 </html>
