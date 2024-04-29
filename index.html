@@ -21,9 +21,9 @@
 
 
         <div class="calculator-buttons">
-          <button class="generic-button" onclick="clean()">C</button>
-          <button class="generic-button" onclick="operator('+/-')">+/-</button>
-          <button class="generic-button" onclick="operator('%')">%</button>
+          <button class="generic-button" id="buttonClean" onclick="clean()">AC</button>
+          <button class="generic-button" onclick="negative('+/-')"> +/- </button>
+          <button class="generic-button" onclick="percente('%')">%</button>
           <button class="orange-button" onclick="operator('/')">÷</button>
 
         </div>
@@ -52,8 +52,8 @@
 
         <div class="calculator-buttons">
           <button class="wide-button" onclick="insert('0')">0</button>
-          <button class="gray-button" onclick="operator(',')">,</button>
-          <button class="orange-button" onclick="calcular()">=</button>
+          <button class="gray-button" onclick="insert(',')">,</button>
+          <button class="orange-button" onclick="calcular()"> = </button>
 
 
         </div>
