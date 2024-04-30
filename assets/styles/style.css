@@ -27,6 +27,7 @@ html {
   background-color: #000000;
   border-radius: 5px;
 }
+
 /* 
 
 .display-calculator input {
@@ -92,8 +93,9 @@ html {
 
 .wide-button {
   background-color: rgb(54, 54, 54);
-  width: 140px;
+  width: 156px;
   color: white;
+  padding-right: 101px;
 }
 
 
