@@ -23,7 +23,7 @@ function insert(num) {
     let formattedNumber = formatNumber(lista[0]);
     document.getElementById('display-calculator').value = formattedNumber;
     if (lista[0] != '') {
-      // console.log(lista[0]);
+      console.log(lista[0]);
       document.getElementById('buttonClean').innerText = 'C';
     }
   } else if (lista.length >= 1 && simbol != '') {
@@ -39,7 +39,7 @@ function insert(num) {
 function formatNumber(num) {
   let parts = num.toString().split('.');
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-  return parts.join(",");
+  return parts.join(".");
 }
 
 
@@ -49,9 +49,9 @@ function formatNumber(num) {
 function operator(value) {
   if (lista[0] && lista[1] != '') {
     let resultado = calcular(parseFloat(lista[0].replace(",", ".")), parseFloat(lista[1].replace(",", ".")), simbol);
+    console.log(resultado);
     // document.getElementById('display-calculator').value = `${resultado}`
     lista[0] = `${resultado}`;
-    console.log(resultado);
     lista[1] = '';
   }
   simbol = value;
@@ -112,15 +112,15 @@ function setDisplay(num) {
   // Formata o número com pontos nas casas decimais
   let formattedNum = num.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 10 });
   document.getElementById('display-calculator').value = formattedNum.replace(".", ",");
-  replace
+
 
 }
 
 
 
 function percente() {
-  lista[0]= lista[0].replace(",", ".");  console.log(lista[0], lista[1], simbol)
-  lista[1]= lista[1].replace(",", ".");
+  lista[0] = lista[0].replace(",", "."); console.log(lista[0], lista[1], simbol)
+  lista[1] = lista[1].replace(",", ".");
   if (lista[0] != '') {
     let resultado = document.getElementById('display-calculator').value
     resultado = parseFloat(lista[0]) / 100
